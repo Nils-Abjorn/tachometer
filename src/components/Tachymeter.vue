@@ -1,5 +1,5 @@
 <template>
-  <div class="tachometer">
+  <div class="tachymeter">
     <svg
       style="overflow: visible"
       :class="{ popup: popup }"
@@ -55,13 +55,13 @@ function startAnimPopup() {
   }, 160)
 }
 
-watch(angle, (n) => {
+watch(angle, () => {
   startAnimPopup()
 })
 </script>
 
 <style scoped>
-.tachometer {
+.tachymeter {
   display: flex;
   padding: 10%;
 }

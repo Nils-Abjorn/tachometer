@@ -1,6 +1,6 @@
 <template>
   <div class="preview">
-    <Tachometer :coefficient="position" />
+    <Tachymeter :coefficient="position" />
   </div>
   <div>
     <button @click="position -= 0.1">-</button>
@@ -10,7 +10,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import Tachometer from './components/Tachometer.vue'
+import Tachymeter from './components/Tachymeter.vue'
 
 const position = ref(0)
 </script>
